@@ -1,3 +1,4 @@
 .venv/
 Vyom.pkt
 instance/
+flaskr/__pycache__/
