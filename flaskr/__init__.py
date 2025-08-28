@@ -12,7 +12,7 @@ def create_app(test_config=None):
     app.config.from_mapping(
         SECRET_KEY='dev',
         # Update the database URI for MySQL
-        SQLALCHEMY_DATABASE_URI = 'mysql://root:Vyom2004r@localhost/db2', # Change the values
+        SQLALCHEMY_DATABASE_URI = 'mysql://username:password@localhost/db_name', # Change the values
         SQLALCHEMY_TRACK_MODIFICATIONS=False,  # Disable track modifications to save memory
     )
 
