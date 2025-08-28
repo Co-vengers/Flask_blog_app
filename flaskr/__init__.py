@@ -16,20 +16,6 @@ def create_app(test_config=None):
         SQLALCHEMY_TRACK_MODIFICATIONS=False,  # Disable track modifications to save memory
     )
 
-    # if test_config is None:
-    #     # Load the instance config, if it exists, when not testing
-    #     app.config.from_pyfile('config.py', silent=True)
-    # else:
-    #     # Load the test config if passed in
-    #     app.config.from_mapping(test_config)
-
-    # # Ensure the instance folder exists
-    # try:
-    #     os.makedirs(app.instance_path)
-    # except OSError:
-    #     pass
-
-    # Initialize the database with the app
     db.init_app(app)
 
     from . import auth
